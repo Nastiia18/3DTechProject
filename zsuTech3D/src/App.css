@@ -40,3 +40,38 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%; 
+  background-color: #333;
+  padding-top: 50px;
+}
+
+nav ul {
+  list-style-type: none; /* прибираємо маркери зі списку */
+  padding: 0;
+}
+
+nav ul li {
+  margin: 20px 0; /* відступи між елементами списку */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none; /* прибираємо підкреслення */
+  color: white; /* білий текст */
+  font-size: 18px; /* розмір шрифту */
+  transition: background-color 0.3s ease; /* ефект при наведенні */
+}
+
+nav ul li a:hover {
+  background-color: #575757; /* колір фону при наведенні */
+}
+
