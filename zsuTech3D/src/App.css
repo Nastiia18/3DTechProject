@@ -11,12 +11,7 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 @keyframes logo-spin {
   from {
@@ -40,38 +35,103 @@
 .read-the-docs {
   color: #888;
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
 
 
-
-nav {
+/* Стилі для сайтбара */
+.sideBar-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 200px;
-  height: 100%; 
-  background-color: #333;
-  padding-top: 50px;
+  height: 100%;
+  background-color: #000;
+  padding-top: 130px;
+  z-index: 500;
 }
-
-nav ul {
-  list-style-type: none; /* прибираємо маркери зі списку */
-  padding: 0;
+.sideBar-nav:hover{
+  color: #575757;
 }
-
 nav ul li {
-  margin: 20px 0; /* відступи між елементами списку */
+  margin: 20px 0;
 }
 
 nav ul li a {
   display: block;
   padding: 10px;
-  text-decoration: none; /* прибираємо підкреслення */
-  color: white; /* білий текст */
-  font-size: 18px; /* розмір шрифту */
-  transition: background-color 0.3s ease; /* ефект при наведенні */
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 
-nav ul li a:hover {
-  background-color: #575757; /* колір фону при наведенні */
+
+
+/* Стилі для хедера */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  display: flex;
+  width: 100%;
+}
+
+.header-logo {
+  width: 100px;
+  height: 50px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #eae6e6;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #575757;
+}
+.header-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  color: #eae6e6;
+  font-size: 17px;
+  cursor: pointer;
+}
+ .icon:hover {
+  color: #575757 ;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}

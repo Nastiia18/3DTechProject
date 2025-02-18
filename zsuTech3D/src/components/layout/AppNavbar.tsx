@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const AppNavbar = () => {
   return (
-    <nav>
+    <nav className="sideBar-nav">
       <ul>
         <li>
           <Link to="/tech1">Техніка 1</Link>
