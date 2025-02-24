@@ -4,10 +4,10 @@ const AppNavbar = () => {
     <nav className="sideBar-nav">
       <ul>
         <li>
-          <Link to="/tech1">Техніка 1</Link>
+          <Link to="/tech1">Танк Т-72</Link>
         </li>
         <li>
-          <Link to="/tech2">Техніка 2</Link>
+          <Link to="/tech2">Bayraktar TB2</Link>
         </li>
         <li>
           <Link to="/tech3">Техніка 3</Link>

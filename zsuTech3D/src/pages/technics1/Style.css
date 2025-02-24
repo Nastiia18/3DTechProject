@@ -1,20 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+.sections {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+    overflow: hidden;
+}
+.inner {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.model-container canvas{
+  width: 1000px;
+   height: 400px;
 }
 
 .tech1-page {
   background-color: #000;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding-right: 0;
   }
-
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
   h1, p {
     text-align: center;
   }
@@ -22,38 +48,37 @@
   .text-content {
     flex: 1;
     justify-content: flex-start;
-    padding-top: 90px;
-    max-width: 80%;
-    padding-right: 700px;
+    padding-top: 120px;
+    max-width: 45%;
     text-align: left;
-    padding-left: 100px;
   }
 
   .title {
     text-align: left;
     font-size: 2rem;
-    color: #ffffff;
+    color: #eae6e6;
     margin-bottom: 15px;
   }
 
   .description {
     text-align: left;
-    color: #ffffff;
+    color: #eae6e6;
     font-size: 1.1rem;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .custom-button {
-    background-color: #F7C815;
-    color: white;
+    background-color: #f7c815;
+    color: #eae6e6;
+    font-weight: 700;
     font-size: 1.1rem;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: left;
   }
 
@@ -62,5 +87,156 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
+
+  /*2*/
+  .features-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  padding: 20px;
+  }
+
+.feature-card {
+  background-color: #000;
+  color: #eae6e6;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.feature-card i {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #F7C815;
+  padding-left: 7px;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #eae6e6;
+}
+.text-characteristic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 7px;
+}
+.features-grid {
+  margin-top: 140px;
+padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  transform: translateX(-90px);
+}
+
+
+/*3*/
+.center-modelStatic{
+  margin-top: 100px;
+  width: 700px;
+  position: relative;
+  left: -80px;
+  padding-left: 40px;
+}
+.model-center-section {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+
+.model-description-side {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #eae6e6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px; 
+  text-align: center;
+}
+
+.model-description-left {
+  top: -10%;
+
+  left: -30%;
+  height: 320px;
+  width: 200px;
+}
+
+.model-description-left p, .model-description-right p{
+  margin-bottom: 35px; 
+  font-weight: 50px;
+}
+.model-description-left h3, .model-description-right h3 {
+  margin-bottom: 10px;
+  color: #F7C815;
+  font-size: 1.2rem;
+}
+.model-description-right {
+  top: -10%;
+  right: -30%;
+  height: 320px;
+  width: 200px;
+}
+
+
+.model-description-bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #eae6e6;
+  padding: 5px 50px;
+  border-radius: 10px;
+  width: 800px;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-description-bottom .divider {
+  border-left: 1px solid rgba(255, 255, 255, 0.3); 
+  height: 40px;
+  margin: 0 20px;
+  display: inline-block;
+
+}
+
+.model-description-bottom h3, .model-description-bottom p {
+  display: block;
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+.model-description-bottom h3 {
+  margin-right: 10px;
+  color: #F7C815;
+  font-size: 1.2rem;
+}
+
+.line {
+  width: 60%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 8px auto;
+}
