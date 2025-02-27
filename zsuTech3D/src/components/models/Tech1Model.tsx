@@ -7,8 +7,8 @@ const Tech1Model = () => {
       <Scene
         modelPath="/models/T-72.glb"
         isRotating={true}
-        position={[0, -3, 4.5]}
-        rotation={[0, -Math.PI / 3.5, 0]}
+        position={[0, -6, 7]}
+        rotation={[0, Math.PI / 2, 0]}
       />
     </div>
   );

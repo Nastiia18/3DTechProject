@@ -9,8 +9,8 @@ const Tech1ModelStatic = () => {
       <Scene
         modelPath="/models/т-72.glb"
         isRotating={false}
-        position={[2, -3.5, 3.2]}
-        rotation={[0, MathUtils.degToRad(-90), 0]}
+        position={[-1, -6, 6]}
+        rotation={[0, MathUtils.degToRad(90), 0]}
       />
     </div>
   );

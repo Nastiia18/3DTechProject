@@ -21,20 +21,23 @@
     justify-content: space-between;
     margin: 0 auto;
   }
+  /*#aaa9a9*/
+  .page-section{
+    background-color: #eceef1;
+  }
 .tech2-column{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
 }
   .text-container {
     text-align: center;
     align-items: center;
     padding-top: 30px;
     width: 900px;
-    display: flex; /* Робить контейнер флексом */
-    flex-direction: column; /* Вирівнює елементи вертикально */
+    display: flex;
+    flex-direction: column;
   }
 
   .tech2-title {
@@ -53,7 +56,8 @@
   }
   .tech2-title {
     text-align: left;
-    font-size: 2.2rem;
+    font-size: 3rem;
+    font-weight: 750;
     color: #000;
     margin-bottom: 15px;
   }
@@ -66,52 +70,112 @@
     text-align: center;
   }
 
-  /*2*/
-  .bayraktar-grid {
-    margin-top: 140px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 800px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    transform: translateX(-35px);
-  }
 
-  .bayraktar-card {
-    background-color: #000;
-    color: #eae6e6;
-    padding: 15px;
-    border-radius: 10px;
-    width: 250px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
+  /*b*/
+.section1-page {
+  background-color: #b3b4b9;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .bayraktar-card i {
-    font-size: 2rem;
-    margin-right: 15px;
-    color: #F7C815;
-    padding-left: 7px;
-  }
+.section1-page::before {
+  content: "BAYRAKTAR";
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%) scaleY(1.3);
+  font-size: 13.8vw;
+  max-width: 40vw;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  z-index: 0;
+  pointer-events: none;
+}
+.section1-page::after {
+  content: "TB2";
+  position: absolute;
+  top: 75%;
+  left: 48%;
+  transform: translate(-50%, -50%) scaleY(1.3);
+  font-size: 13.8vw;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  z-index: 0;
+  pointer-events: none;
+}
 
-  .bayraktar-text h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-  .bayraktar-text p {
-    font-size: 1rem;
-    color: #eae6e6;
-  }
-  .bayraktar-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0px 7px;
-  }
-  
+.innerB {
+  position: relative;
+  z-index: 1;
+}
+
+.drone-info {
+  margin-top: 310px;
+  width: 200px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.drone-info.left {
+  text-align: left;
+}
+
+.drone-info.right {
+  align-items: flex-end;
+  margin-right: 50px;
+}
+
+.drone-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.drone-label {
+  font-size: 17px;
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.container-model {
+  margin-top: 220px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-model canvas {
+  width: 600px;
+  height: 80vh;
+}
+
+/*$*/
+.price-tag {
+  position: absolute;
+  bottom: 100px;
+  left: 48%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.3); /* Напівпрозорий чорний фон */
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.price-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eceef1;
+}

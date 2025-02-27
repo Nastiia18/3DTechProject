@@ -10,7 +10,7 @@ const AppNavbar = () => {
           <Link to="/tech2">Bayraktar TB2</Link>
         </li>
         <li>
-          <Link to="/tech3">Техніка 3</Link>
+          <Link to="/tech3">HIMARS</Link>
         </li>
       </ul>
     </nav>

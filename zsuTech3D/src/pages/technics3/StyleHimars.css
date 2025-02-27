@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .sectionsH {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: flex-start; 
+    position: relative;
+    overflow: hidden;
+  }
+  .innerH {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .container-text {
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #000; 
+    max-width: 800px; /* Обмежуємо ширину текстового блоку */
+    text-align: left; 
+}
+  .title-t3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .description-t3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.5;
+  }

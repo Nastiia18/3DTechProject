@@ -1,10 +1,11 @@
 import "./StyleBayraktar.css";
 import BayraktarModel from "../../components/models/BayraktarModel";
+import BayraktarStaticModel from "../../components/models/BayraktarStaticModel";
 
 const Tech2Page = () => {
   return (
     <>
-      <div className="sectionsB">
+      <div className="sectionsB page-section">
         <div className="innerB tech2-column">
           <div className="text-container">
             <h1 className="tech2-title">Bayraktar TB2</h1>
@@ -20,49 +21,36 @@ const Tech2Page = () => {
         </div>
       </div>
 
-      <div className="sectionsB ">
-        <div className="innerB  bayraktar-grid">
-          <div className="bayraktar-card">
-            <i className="fas fa-tachometer-alt"></i>
-            <div className="bayraktar-text">
-              <h3>Макс. швидкість</h3>
-              <p>222 км/год</p>
-            </div>
+      <div className="sectionsB section1-page">
+        <div className="innerB">
+          <div className="drone-info left">
+            <p className="drone-value">700 кг</p>
+            <h3 className="drone-label">Макс. злітна вага</h3>
+
+            <p className="drone-value">4 ракети</p>
+            <h3 className="drone-label">Озброєння</h3>
+
+            <p className="drone-value">6.5 м</p>
+            <h3 className="drone-label">Довжина</h3>
           </div>
-          <div className="bayraktar-card">
-            <i className="fas fa-clock"></i>
-            <div className="bayraktar-text">
-              <h3>Тривалість польоту</h3>
-              <p>27 год</p>
-            </div>
+
+          <div className="container-model">
+            <BayraktarStaticModel />
           </div>
-          <div className="bayraktar-card">
-            <i className="fas fa-arrows-alt"></i>
-            <div className="bayraktar-text">
-              <h3>Радіус дії</h3>
-              <p>150 км</p>
-            </div>
+
+          <div className="price-tag">
+            <span className="price-value">$5,000,000</span>
           </div>
-          <div className="bayraktar-card">
-            <i className="fas fa-weight-hanging"></i>
-            <div className="bayraktar-text">
-              <h3>Макс. злітна вага</h3>
-              <p>700 кг</p>
-            </div>
-          </div>
-          <div className="bayraktar-card">
-            <i className="fas fa-bomb"></i>
-            <div className="bayraktar-text">
-              <h3>Озброєння</h3>
-              <p>4 керовані ракети</p>
-            </div>
-          </div>
-          <div className="bayraktar-card">
-            <i className="fas fa-dollar-sign"></i>
-            <div className="bayraktar-text">
-              <h3>Вартість</h3>
-              <p>5 млн $</p>
-            </div>
+
+          <div className="drone-info right">
+            <p className="drone-value">222 км/год</p>
+            <h3 className="drone-label">Макс. швидкість</h3>
+
+            <p className="drone-value">27 год</p>
+            <h3 className="drone-label">Тривалість польоту</h3>
+
+            <p className="drone-value">150 км</p>
+            <h3 className="drone-label">Радіус дії</h3>
           </div>
         </div>
       </div>

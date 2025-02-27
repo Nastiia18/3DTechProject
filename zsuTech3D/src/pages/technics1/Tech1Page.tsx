@@ -22,86 +22,38 @@ const Tech1Page = () => {
         </div>
       </div>
 
-      <div className="sections features-section">
-        <div className="inner features-grid">
-          <div className="feature-card">
-            <i className="fas fa-tachometer-alt"></i>
-            <div className="text-characteristic">
-              <h3>Макс. швидкість</h3>
-              <p>60 км/год</p>
-            </div>
-          </div>
-          <div className="feature-card">
-            <i className="fas fa-shield-alt"></i>
-            <div className="text-characteristic">
-              <h3>Захист</h3>
-              <p>Комбінована броня</p>
-            </div>
-          </div>
-          <div className="feature-card">
-            <i className="fas fa-cogs"></i>
-            <div className="text-characteristic">
-              <h3>Двигун</h3>
-              <p>Дизельний, 780 к.с.</p>
-            </div>
-          </div>
-          <div className="feature-card">
-            <i className="fas fa-users"></i>
-            <div className="text-characteristic">
-              <h3>Екіпаж</h3>
-              <p>3 особи</p>
-            </div>
-          </div>
-
-          <div className="feature-card">
-            <i className="fas fa-gas-pump"></i>
-            <div className="text-characteristic">
-              <h3>Запас ходу</h3>
-              <p>500 км</p>
-            </div>
-          </div>
-
-          <div className="feature-card">
-            <i className="fas fa-dollar-sign"></i>
-            <div className="text-characteristic">
-              <h3>Вартість</h3>
-              <p>3 млн $</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="sections model-center-section">
         <div className="inner">
           <div className="center-modelStatic">
             <Tech1ModelStatic />
 
-            <div className="model-description-side model-description-left">
-              <h3>Висота:</h3>
-              <p> 2,226 метра</p>
-              <div className="line "></div>
-              <h3>Ширина:</h3>
-              <p>3,59 метрам</p>
-              <div className="line "></div>
-              <h3>Питома потужність:</h3>
-              <p>18,8 к.с./т.</p>
+            <div className="features-grid">
+              <div className="feature-card">
+                <i className="fas fa-tachometer-alt"></i>
+                <div className="text-characteristic">
+                  <h3>Макс. швидкість</h3>
+                  <p>60 км/год</p>
+                </div>
+              </div>
+              <div className="feature-card">
+                <i className="fas fa-shield-alt"></i>
+                <div className="text-characteristic">
+                  <h3>Запас ходу</h3>
+                  <p>500 км</p>
+                </div>
+              </div>
+              <div className="feature-card">
+                <i className="fas fa-cogs"></i>
+                <div className="text-characteristic">
+                  <h3>Двигун</h3>
+                  <p>Дизельний, 780 к.с.</p>
+                </div>
+              </div>
             </div>
-
-            <div className="model-description-side model-description-right">
-              <h3>Маса:</h3>
-              <p>41,5 тонни</p>
-              <div className="line "></div>
-              <h3>Дорожній просвіт:</h3>
-              <p>470 мм</p>
-              <div className="line "></div>
-              <h3>Бронювання:</h3>
-              <p>До 500 мм (фронтальна броня)</p>
-            </div>
-
             <div className="model-description-bottom">
               <div>
-                <h3>Тип озброєння:</h3>
-                <p>105-мм гармата</p>
+                <h3>Висота:</h3>
+                <p> 2,226 метра</p>
               </div>
               <div className="divider"></div>
               <div>
@@ -110,8 +62,13 @@ const Tech1Page = () => {
               </div>
               <div className="divider"></div>
               <div>
-                <h3>Додатково:</h3>
-                <p>Система управління вогнем</p>
+                <h3>Ширина:</h3>
+                <p>3,59 метрам</p>
+              </div>
+              <div className="divider"></div>
+              <div>
+                <h3>Маса:</h3>
+                <p>41,5 тонни</p>
               </div>
             </div>
           </div>
