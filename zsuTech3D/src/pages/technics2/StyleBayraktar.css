@@ -34,7 +34,7 @@
   .text-container {
     text-align: center;
     align-items: center;
-    padding-top: 30px;
+   margin-top: 10px;
     width: 900px;
     display: flex;
     flex-direction: column;

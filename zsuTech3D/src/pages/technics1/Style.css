@@ -44,6 +44,29 @@ body {
     z-index: 0;
   }
 
+  .tech1-page::before,
+  .tech1-page::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 20vw; /* Ширина ефекту */
+      height: 80%; /* Висота ефекту */
+      background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.15), transparent);
+      filter: blur(50px);
+      border-radius: 50% / 40%; /* Заокруглення з обох боків для півмісяця */
+      transform: translateY(-50%);
+      z-index: 0;
+  }
+  
+  .tech1-page::before {
+      left: -10vw; /* Зміщує ліву частину */
+  }
+  
+  .tech1-page::after {
+      right: -10vw; /* Зміщує праву частину */
+  }
+  
+
   /**/
 /*
 .tech1-page::before {

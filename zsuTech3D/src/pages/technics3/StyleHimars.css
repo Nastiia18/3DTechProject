@@ -1,40 +1,161 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-  }
-  .sectionsH {
-    height: 100vh;
-    width: 100vw;
-    max-width: 100vw;
-    display: flex;
-    justify-content: flex-start; 
-    position: relative;
-    overflow: hidden;
-  }
-  .innerH {
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .container-text {
-    margin-top: 80px;
-    padding: 20px;
-    border-radius: 8px;
-    color: #000; 
-    max-width: 800px; /* Обмежуємо ширину текстового блоку */
-    text-align: left; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
-  .title-t3 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  .description-t3 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    line-height: 1.5;
-  }
+
+.sectionsH {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.innerH {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+.section1-himors{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.container-text {
+  margin-top: 50px;
+  padding: 20px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-t3 {
+  font-size: 3.3rem;
+  font-weight: 800;
+}
+
+.text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description-t3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  max-width: 500px;
+  text-align: left;
+}
+
+.details-button {
+  background-color: #464748;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #909192;
+}
+
+.modelH-container {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.sectionHimars{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/**/
+/* Ліва частина — опис */
+.description-container {
+  margin-top:150px;
+  flex: 1;
+  max-width: 260px;
+  text-align: left;
+}
+
+.description-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #222;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+  color: #222;
+}
+
+.model-himars-container {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:120px
+}
+
+.specs-column {
+  width: 200px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top:150px;
+  margin-right: 50px;
+  align-items: flex-end;
+}
+
+.spec-item {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.spec-name {
+  font-size: 32px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.spec-value {
+  font-size: 17px;
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
