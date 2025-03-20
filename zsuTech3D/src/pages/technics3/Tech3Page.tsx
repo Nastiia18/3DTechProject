@@ -40,7 +40,7 @@ const Tech3Page = () => {
             </p>
           </div>
 
-          <div className="model-himars-container">
+          <div className="model-himars-container shadow-model">
             <HimarsStaticModel />
           </div>
 

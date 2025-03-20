@@ -6,7 +6,7 @@ const HimarsModel = () => {
       <Scene
         modelPath="/models/himars.glb"
         isRotating={true}
-        position={[-1, -4, -12]}
+        position={[-1, -4.5, -12]}
         rotation={[0, Math.PI / 2, 0]}
       />
     </div>

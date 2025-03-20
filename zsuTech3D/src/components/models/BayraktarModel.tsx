@@ -6,7 +6,7 @@ const BayraktarModel = () => {
       <Scene
         modelPath="/models/bayraktar.glb"
         isRotating={true}
-        position={[0, 3, 5]}
+        position={[1, 3, 6]}
         rotation={[0, -Math.PI / 3, 0]}
       />
     </div>

@@ -6,8 +6,8 @@ const BayraktarStaticModel = () => {
       <Scene
         modelPath="/models/bayraktar2.glb"
         isRotating={false}
-        position={[0, -1, 7]}
-        rotation={[-Math.PI / 2, 0, 0]}
+        position={[0, 2, 6]}
+        rotation={[Math.PI / 2, 3.14, 0]}
       />
     </div>
   );

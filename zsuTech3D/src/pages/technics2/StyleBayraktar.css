@@ -23,7 +23,7 @@
   }
   /*#aaa9a9*/
   .page-section{
-    background-color: #eceef1;
+    background-color: #9ca3ad;
   }
 .tech2-column{
   display: flex;
@@ -35,7 +35,8 @@
     text-align: center;
     align-items: center;
    margin-top: 10px;
-    width: 900px;
+   margin-right: 45px;
+    width: 700px;
     display: flex;
     flex-direction: column;
   }
@@ -69,11 +70,24 @@
     margin-bottom: 15px;
     text-align: center;
   }
-
+  .bayractar-button{
+    background-color: #7083a3;
+    color: #282828;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    margin-right: 25px;
+    text-align: left;
+  }
 
   /*b*/
 .section1-page {
-  background-color: #b3b4b9;
+  background-color: #8e99ab;
   overflow: hidden;
   height: 100vh;
   display: flex;
@@ -168,7 +182,7 @@
   bottom: 100px;
   left: 48%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.3); /* Напівпрозорий чорний фон */
+  background: rgba(0, 0, 0, 0.3);
   padding: 15px 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);

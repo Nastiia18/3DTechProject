@@ -23,6 +23,7 @@ const Tech1Page = () => {
       </div>
 
       <div className="sections model-center-section">
+        <div className="left-line"></div>
         <div className="inner">
           <div className="center-modelStatic">
             <Tech1ModelStatic />
@@ -31,15 +32,15 @@ const Tech1Page = () => {
               <div className="feature-card">
                 <i className="fas fa-tachometer-alt"></i>
                 <div className="text-characteristic">
-                  <h3>Макс. швидкість</h3>
-                  <p>60 км/год</p>
+                  <h3>60 км/год</h3>
+                  <p>Макс. швидкість</p>
                 </div>
               </div>
               <div className="feature-card">
                 <i className="fas fa-shield-alt"></i>
                 <div className="text-characteristic">
-                  <h3>Запас ходу</h3>
-                  <p>500 км</p>
+                  <h3>500 км</h3>
+                  <p>Запас ходу</p>
                 </div>
               </div>
               <div className="feature-card">

@@ -4,7 +4,11 @@
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 .sectionsH {
   height: 100vh;
   width: 100vw;
@@ -19,16 +23,36 @@
 .innerH {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1350px;
   width: 100%;
-  padding: 0 20px;
 }
 .section1-himors{
+  background-color: #a4a289;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-right: 0;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
+
+.section1-himors::before {
+  content: "HIMARS";
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  transform: translate(-50%, -50%) scaleY(1.3);
+  font-size: 15vw;
+  max-width: 80vw;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .container-text {
   margin-top: 50px;
   padding: 20px;
@@ -43,17 +67,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 60px;
 }
 
 .title-t3 {
   font-size: 3.3rem;
   font-weight: 800;
+  color: #49433c;
 }
 
 .text-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 130px;
 }
 
 .description-t3 {
@@ -62,10 +89,11 @@
   line-height: 1.5;
   max-width: 500px;
   text-align: left;
+  color: #49433c;
 }
 
 .details-button {
-  background-color: #464748;
+  background-color: #49433c;;
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -90,33 +118,51 @@
 
 
 .sectionHimars{
+  background-color: #a4a289;
   align-items: center;
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
+/*
+.shadow-model::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 400px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  filter: blur(25px);
+  opacity: 0.6;
+  z-index: -1;
+}*/
 
-/**/
+
 /* Ліва частина — опис */
 .description-container {
-  margin-top:150px;
+  margin-top:50px;
   flex: 1;
-  max-width: 260px;
+  max-width: 210px;
   text-align: left;
+  margin-left: 80px;
 }
 
 .description-title {
-  font-size: 1.7rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 800;
   margin-bottom: 10px;
   text-align: left;
-  color: #222;
+  color: #49433c;
 }
 
 .description-text {
   font-size: 1.1rem;
   line-height: 1.5;
   text-align: left;
-  color: #222;
+  color: #49433c;
 }
 
 .model-himars-container {
@@ -133,7 +179,7 @@
   display: flex;
   flex-direction: column;
   margin-top:150px;
-  margin-right: 50px;
+  margin-right: 155px;
   align-items: flex-end;
 }
 
@@ -147,14 +193,14 @@
 .spec-name {
   font-size: 32px;
   font-weight: 800;
-  color: #222;
+  color: #49433c;
   margin-bottom: 4px;
 }
 
 .spec-value {
   font-size: 17px;
   font-weight: normal;
-  color: #666;
+  color: #76725c;
   margin-bottom: 15px;
   text-transform: uppercase;
   margin-bottom: 30px;
