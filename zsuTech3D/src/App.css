@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   margin: 0;
@@ -6,15 +7,11 @@ html, body {
   flex-direction: column;
   padding-bottom: 0;
 }
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 .content {
   flex: 1;
@@ -24,12 +21,14 @@ html, body {
 }
 
 #root {
-  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -70,7 +69,26 @@ html, body {
 }
 
 
+
+
+
 /* Стилі для сайтбара */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background-color: #000;
+  color: #fff;
+  border: 1.5px solid white;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-bottom: 18px;
+
+}
 .sideBar-nav {
   position: fixed;
   top: 0;
@@ -79,8 +97,13 @@ html, body {
   height: 100%;
   background-color: #000;
   padding-top: 130px;
-  z-index: 500;
+z-index: 500;
 }
+
+.sideBar-nav {
+  transition: transform 0.3s ease;
+}
+
 .sideBar-nav:hover{
   color: #575757;
 }
@@ -98,6 +121,41 @@ nav ul li a {
 nav ul li a:hover {
   color: #575757;
 }
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sideBar-nav {
+    transform: translateX(-100%);
+  }
+
+  .sideBar-nav.open {
+    transform: translateX(0);
+  }
+  nav ul li {
+  margin: 200px 0;
+}
+
+nav ul li a {
+  color: #eae6e6;
+  font-size: 22px;
+}
+}
+
+@media (max-width: 480px) {
+  .sidebar-toggle {
+    margin-top: 14px;
+  }
+
+nav ul li a {
+  color: #eae6e6;
+  font-size: 26px;
+}
+}
+
+
 
 
 /* Стилі для хедера */
@@ -164,6 +222,58 @@ nav ul li a:hover {
   gap: 40px;
 }
 
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+
+  .header-logo {
+    padding-left: 50px;
+    width: 180px;
+    height: auto;
+  }
+
+  .header-content {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .header-icons {
+    gap: 15px;
+  }
+
+  .header-right {
+    gap: 20px;
+  }
+  .icon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo {
+    height: auto;
+     width: 230px;
+    padding-left: 50px;
+  }
+  .icon {
+   font-size: 46px;
+  }
+
+ .header-icons {
+    gap: 30px;
+  }
+
+  .header-content {
+    padding: 0 10px;
+  }
+
+  .header-right {
+    gap: 20px;
+  }
+}
+
+
 /*footer*/
 .footer {
   background-color: #000;
@@ -174,7 +284,7 @@ nav ul li a:hover {
   font-size: 1rem;
   position: relative;
   bottom: 0;
-  left: 100px;
+  left: 18px;
   width: 1300px;
   height: 80px;
 }

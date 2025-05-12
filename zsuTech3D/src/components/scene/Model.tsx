@@ -1,5 +1,5 @@
 // Model.tsx
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -19,6 +19,8 @@ const Model = ({
   const gltf = useLoader(GLTFLoader, modelPath);
   const modelRef = useRef<Object3D>(null);
 
+  const clonedScene = useMemo(() => gltf.scene.clone(), [gltf.scene]);
+
   useFrame(() => {
     if (isRotating && modelRef.current) {
       modelRef.current.rotation.y += 0.01;
@@ -28,7 +30,7 @@ const Model = ({
   return (
     <primitive
       ref={modelRef}
-      object={gltf.scene}
+      object={clonedScene}
       scale={3.5}
       position={position}
       rotation={rotation}

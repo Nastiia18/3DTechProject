@@ -1,7 +1,7 @@
 import "./Style.css";
 import Tech1Model from "../../components/models/Tech1Model";
+//import { MathUtils } from "three";
 import Tech1ModelStatic from "../../components/models/Tech1ModelStatic";
-
 const Tech1Page = () => {
   return (
     <>

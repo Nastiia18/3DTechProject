@@ -7,7 +7,7 @@ const Tech1ModelStatic = () => {
   return (
     <div style={{ width: "600px", height: "70vh" }}>
       <Scene
-        modelPath="/models/т-72.glb"
+        modelPath="/models/T-72.glb"
         isRotating={false}
         position={[-1, -6, 6]}
         rotation={[0, MathUtils.degToRad(90), 0]}

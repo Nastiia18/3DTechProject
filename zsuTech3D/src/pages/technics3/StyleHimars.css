@@ -67,7 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 60px;
+  margin-left: 90px;
 }
 
 .title-t3 {
@@ -147,7 +147,7 @@ body {
   flex: 1;
   max-width: 210px;
   text-align: left;
-  margin-left: 80px;
+  margin-left: 126px;
 }
 
 .description-title {
@@ -179,7 +179,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top:150px;
-  margin-right: 155px;
+  margin-right: 165px;
   align-items: flex-end;
 }
 

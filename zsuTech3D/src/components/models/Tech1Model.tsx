@@ -1,4 +1,3 @@
-// Tech1Model.tsx
 import Scene from "../scene/Scene";
 
 const Tech1Model = () => {

@@ -1,6 +1,5 @@
 import HimarsModel from "../../components/models/HimarsModel";
 import HimarsStaticModel from "../../components/models/HimarsStaticModel";
-
 import "./StyleHimars.css";
 
 const Tech3Page = () => {
