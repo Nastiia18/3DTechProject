@@ -27,16 +27,19 @@
   }
 .tech2-column{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  justify-content: space-between;
 }
   .text-container {
-    text-align: center;
-    align-items: center;
-   margin-top: 10px;
-   margin-right: 45px;
-    width: 700px;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 6%;
+    margin-right: 0%;
+    margin-left: 5%;
+    margin-bottom: 25%;
+    width: 40%;
     display: flex;
     flex-direction: column;
   }
@@ -47,13 +50,14 @@
   }
 
   .tech2-model-wrapper {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
    width: 100%;
    max-width: 100%;
-   height: 900px;
-   margin-top: 5px;
-   margin-right: 100px;
+   height: 50%;
+   margin-top: 5%;
+   padding-right: 5%;
+   margin-bottom: 20%;
   }
   .tech2-title {
     text-align: left;
@@ -68,7 +72,6 @@
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 15px;
-    text-align: center;
   }
   .bayractar-button{
     background-color: #7083a3;
@@ -130,7 +133,7 @@
 }
 
 .drone-info {
-  margin-top: 310px;
+  margin-top: 190px;
   width: 200px;
   font-family: Arial, sans-serif;
   display: flex;
@@ -164,7 +167,7 @@
 }
 
 .container-model {
-  margin-top: 220px;
+  margin-top: 5%;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -179,7 +182,7 @@
 /*$*/
 .price-tag {
   position: absolute;
-  bottom: 100px;
+  bottom: 10%;
   left: 48%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.3);
@@ -192,4 +195,151 @@
   font-size: 24px;
   font-weight: bold;
   color: #eceef1;
+}
+
+@media (max-width: 920px) {
+  .innerB {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech2-column {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.price-value {
+  font-size: 26px;
+}
+  .tech2-title,
+  .tech2-description {
+   text-align: center;
+  width: 100%;
+  }
+    .tech2-title {
+    font-size: 3.2rem;
+    font-weight: 750;
+  }
+    .tech2-description {
+    font-size: 1.3rem;
+  }
+  .text-container {
+  width: 80%;
+  margin-top: 8%;
+  margin-bottom: 0;
+  margin-right: 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .tech2-model-wrapper {
+    width: 100%;
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  .price-tag {
+    position: static;
+    margin-top: 100px;
+    margin-bottom:15%;
+    transform: none;
+    margin-right: 5%;
+  }
+
+  .section1-page {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .drone-info {
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .drone-info.right,
+  .drone-info.left {
+    align-items: center;
+    margin: 0;
+  }
+
+  .container-model {
+    margin-top: 15px;
+    margin-bottom: -120px;
+    margin-right: 5%;
+  }
+
+  .container-model canvas {
+     width: 100%;
+     height: 100%;
+  }
+
+  .section1-page::before,
+  .section1-page::after {
+    display: none;
+   }
+  .bayractar-button {
+    font-size: 1.3rem;
+    text-align: center;
+    width: auto;
+    margin: 10px auto 0 auto;
+}
+.drone-value {
+  font-size: 36px;
+}
+.drone-label {
+  font-size: 18px;
+}
+}
+
+@media (max-width: 576px) {
+  .text-container {
+  width: 80%;
+  margin-top: 8%;
+  margin-bottom: 0;
+  margin-right: 12%;
+  }
+    .price-tag {
+    position: static;
+    margin-top: 100px;
+    margin-bottom:300px;
+  }
+  .tech2-title {
+    font-size: 2.5rem;
+  }
+  .tech2-description {
+    font-size: 1.1rem;
+  }
+
+  .tech2-model-wrapper {
+   width: 98%;
+   max-width: 100%;
+   height: 25%;
+   margin-top: 5%;
+   padding-right: 5%;
+   margin-bottom: 20%;
+  }
+  .drone-info.right,
+  .drone-info.left{
+    margin-right: 25%;
+  }
+.container-model canvas {
+  width: 100%;
+  height: 100%;
+  max-height: 40vh;
+}
+.container-model{
+margin-bottom: 10%;
+}
+.drone-value {
+  font-size: 30px;
+  font-weight: 850;
+}
+
+.drone-label {
+  font-size: 16px;
+}
+
 }

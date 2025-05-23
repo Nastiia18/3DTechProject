@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2025 Бондар Анастасія | Практичний проєкт</p>
+      <p>© 2025 Бондар Анастасія | Курсова</p>
     </footer>
   );
 };

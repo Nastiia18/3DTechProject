@@ -205,3 +205,170 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+
+
+@media screen and (max-width: 920px) {
+  .sectionsH {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .innerH {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .section1-himors {
+    height: auto;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+ .section1-himors::before {
+    font-size: 21vw;
+    top: 52%;
+    left: 43%;
+    transform: translate(-50%, -50%) scaleY(1.2);
+    max-width: 85vw;
+  }
+
+  .container-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 5%;
+    padding: 0;
+  }
+
+  .titles-container {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .title-t3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .text-right {
+    margin-right: 0;
+    align-items: center;
+  }
+.details-button {
+  font-size: 1.3rem;
+}
+  .description-t3 {
+    font-size: 1.4rem;
+    max-width: 85%;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .modelH-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .sectionHimars {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 20px;
+  }
+
+  .description-container {
+    margin-left: 0;
+    margin-right: 5%;
+    margin-top: 20px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .description-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .description-text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .model-himars-container {
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+  }
+
+  .specs-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 5%;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .spec-item {
+    align-items: center;
+    text-align: center;
+    min-width: 40%;
+  }
+
+  .spec-name {
+    font-size: 2rem;
+  }
+
+  .spec-value {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+.title-t3{
+  font-size: 2.5rem;
+  text-align: center;
+ }
+
+  .description-t3 {
+    font-size: 1.2rem;
+    max-width: 80%;
+  }
+  .details-button {
+  font-size: 1.1rem;
+}
+ .section1-himors::before {
+    font-size: 21vw;
+    top: 60%;
+  }
+   .modelH-container {
+    margin-right: 10%;
+  }
+
+  .description-title {
+    font-size: 2.5rem;
+    margin-bottom: 7%;
+  }
+  .description-text {
+    font-size: 1.2rem;
+    width: 85%;
+    margin-left: 8%;
+  }
+  .specs-column {
+    margin-top: 25%;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .spec-name {
+    font-size: 1.9rem;
+  }
+  .spec-value {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+}

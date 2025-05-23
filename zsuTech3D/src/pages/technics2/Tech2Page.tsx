@@ -19,6 +19,9 @@ const Tech2Page = () => {
           <div className="tech2-model-wrapper">
             <BayraktarModel />
           </div>
+          <div className="price-tag">
+            <span className="price-value">$5,000,000</span>
+          </div>
         </div>
       </div>
       <div className="sectionsB section1-page">
@@ -36,10 +39,6 @@ const Tech2Page = () => {
 
           <div className="container-model">
             <BayraktarStaticModel />
-          </div>
-
-          <div className="price-tag">
-            <span className="price-value">$5,000,000</span>
           </div>
 
           <div className="drone-info right">
