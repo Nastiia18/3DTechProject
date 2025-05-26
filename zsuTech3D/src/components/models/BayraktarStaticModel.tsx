@@ -14,7 +14,7 @@ const BayraktarStaticModel = () => {
 
       if (width < 576) {
         // Мобільні
-        setPosition([-2.3, 2, -3]);
+        setPosition([-2.4, 2, -4]);
         setSize({ width: "500px", height: "350px" });
       } else if (width < 920) {
         // Планшети

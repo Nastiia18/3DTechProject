@@ -17,6 +17,7 @@ const Tech1Page = () => {
             <button className="custom-button">Докладніше</button>
           </div>
           <div className="model-container">
+            <div className="light-rays"></div>
             <Tech1Model />
           </div>
         </div>

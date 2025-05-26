@@ -20,7 +20,7 @@ const BayraktarModel = () => {
         setSize({ width: "98%", height: "40vh" });
       } else if (width < 920) {
         // Планшети
-        setPosition([0, 5, 10]);
+        setPosition([0, 2, 2.4]);
         setSize({ width: "100%", height: "500px" });
       } else {
         // Десктоп

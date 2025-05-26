@@ -7,6 +7,7 @@ const Tech3Page = () => {
     <>
       <div className="sectionsH">
         <div className="innerH section1-himors">
+          <div className="light-rays-himars"></div>
           <div className="container-text">
             <div className="titles-container">
               <h1 className="title-t3">M142</h1>
@@ -30,6 +31,7 @@ const Tech3Page = () => {
 
       <div className="sectionsH">
         <div className="innerH sectionHimars">
+          <div className="light-rays-himars2"></div>
           <div className="description-container">
             <h2 className="description-title">HIMARS</h2>
             <p className="description-text">

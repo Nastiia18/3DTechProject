@@ -17,6 +17,7 @@ const Tech2Page = () => {
             <button className="bayractar-button">Докладніше</button>
           </div>
           <div className="tech2-model-wrapper">
+            <div className="light-rays-blue"></div>
             <BayraktarModel />
           </div>
           <div className="price-tag">
@@ -25,6 +26,7 @@ const Tech2Page = () => {
         </div>
       </div>
       <div className="sectionsB section1-page">
+        <div className="light-rays-section"></div>
         <div className="innerB">
           <div className="drone-info left">
             <p className="drone-value">700 кг</p>
@@ -40,7 +42,6 @@ const Tech2Page = () => {
           <div className="container-model">
             <BayraktarStaticModel />
           </div>
-
           <div className="drone-info right">
             <p className="drone-value">222 км/год</p>
             <h3 className="drone-label">Макс. швидкість</h3>
