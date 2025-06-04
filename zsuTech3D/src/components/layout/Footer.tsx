@@ -1,7 +1,12 @@
+import { useTranslation } from "react-i18next";
+import "../../i18n";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
-      <p>© 2025 Бондар Анастасія | Курсова</p>
+      <p>{t("navigation.copyright")}</p>
     </footer>
   );
 };

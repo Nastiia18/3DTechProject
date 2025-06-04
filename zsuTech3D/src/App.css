@@ -6,6 +6,7 @@ html, body {
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
+  background-color: #000;
 }
 .wrapper {
   display: flex;
@@ -26,7 +27,8 @@ html, body {
   min-height: 100vh;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
+
   text-align: center;
 }
 .logo {
@@ -57,7 +59,7 @@ html, body {
 }
 
 .read-the-docs {
-  color: #888;
+  color: #eae6e6;
 }
 
 * {
@@ -198,7 +200,9 @@ nav ul li a {
   display: flex;
   gap: 20px;
 }
-
+.header-nav .nav-link {
+  color: #eae6e6 !important;
+}
 .nav-link {
   text-decoration: none;
   color: #eae6e6;
@@ -214,6 +218,7 @@ nav ul li a {
 .header-icons {
   display: flex;
   gap: 20px;
+  padding-top: 10px;
 }
 
 .icon {
@@ -231,8 +236,21 @@ nav ul li a {
 }
 
 @media (max-width: 920px) {
-  .header-nav {
-    display: none;
+ .header-nav {
+    display: flex;
+    gap: 18px;
+    padding-top: 10px;
+    margin-right: 0;
+  }
+
+  .nav-link {
+    font-size: 0;
+  }
+
+  .nav-link svg {
+  color: #eae6e6;
+  font-size: 28px;
+  cursor: pointer;
   }
 
   .header-logo {
@@ -247,10 +265,6 @@ nav ul li a {
     padding: 0 10px;
   }
 
-  .header-icons {
-    gap: 15px;
-  }
-
   .header-right {
     gap: 20px;
   }
@@ -260,6 +274,9 @@ nav ul li a {
 }
 
 @media (max-width: 480px) {
+    .nav-link svg {
+  font-size: 24px;
+  }
   .header-logo {
     height: auto;
     width: 150px;
@@ -267,7 +284,7 @@ nav ul li a {
     margin-left: -5px;
   }
   .icon {
-   font-size: 22px;
+    font-size: 22px;
   }
 
  .header-icons {
@@ -306,13 +323,40 @@ nav ul li a {
 
 @media (max-width: 920px) {
   .footer {
-    left: -28%;
+    left: -24%;
     font-size: 1.1rem;
   }
 }
 @media (max-width: 576px) {
   .footer {
-    left: -44%;
+    left: -40%;
     font-size: 0.9rem;
   }
 }
+
+
+
+
+/**/
+.lang-select {
+  background-color: #000000;
+  border: 1px solid #2e2e2e;
+  color: #eae6e6;
+  font-weight: 500;
+  padding: 2px 2px;
+  margin-top: -3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lang-select:hover {
+  background-color: #080808;
+}
+
+.lang-select option {
+  background-color: #000000;
+  color: #eae6e6;
+}
+

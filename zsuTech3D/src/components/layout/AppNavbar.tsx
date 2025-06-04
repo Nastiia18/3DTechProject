@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const AppNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { t } = useTranslation();
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   return (
@@ -16,7 +17,7 @@ const AppNavbar = () => {
         <ul>
           <li>
             <Link to="/tech1" onClick={() => setIsOpen(false)}>
-              Танк Т-72
+              {t("navigation.tank")}
             </Link>
           </li>
           <li>

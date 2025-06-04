@@ -2,18 +2,29 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Model from "./Model";
+import { useRef, forwardRef, useImperativeHandle } from "react";
 
-const Scene = ({
-  modelPath,
-  isRotating,
-  position,
-  rotation,
-}: {
-  modelPath: string;
-  isRotating: boolean;
-  position: [number, number, number];
-  rotation: [number, number, number];
-}) => {
+export type SceneRef = {
+  resetControls: () => void;
+};
+
+const Scene = forwardRef<
+  SceneRef,
+  {
+    modelPath: string;
+    isRotating: boolean;
+    position: [number, number, number];
+    rotation: [number, number, number];
+  }
+>(({ modelPath, isRotating, position, rotation }, ref) => {
+  const controlsRef = useRef<any>(null);
+
+  useImperativeHandle(ref, () => ({
+    resetControls: () => {
+      controlsRef.current?.reset(); // 💥 ось це головне
+    },
+  }));
+
   return (
     <div style={{ height: "60vh" }}>
       <Canvas shadows camera={{ position: [0, 6, 15], fov: 60 }}>
@@ -30,10 +41,10 @@ const Scene = ({
           position={position}
           rotation={rotation}
         />
-        <OrbitControls />
+        <OrbitControls ref={controlsRef} />
       </Canvas>
     </div>
   );
-};
+});
 
 export default Scene;

@@ -17,7 +17,7 @@ const HimarsStaticModel = () => {
 
       if (width < 576) {
         // мобілки
-        setPosition([-1, -6.5, -22]);
+        setPosition([0, -6.5, -22]);
         setSize({ width: "95vw", height: "40vh" });
       } else if (width < 920) {
         // планшети

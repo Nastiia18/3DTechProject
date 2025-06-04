@@ -1,5 +1,5 @@
 // Model.tsx
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -21,6 +21,19 @@ const Model = ({
 
   const clonedScene = useMemo(() => gltf.scene.clone(), [gltf.scene]);
 
+  useEffect(() => {
+    if (modelRef.current) {
+      modelRef.current.position.set(...position);
+    }
+  }, [position]);
+
+  // 👉 Реагуємо на зміну rotation (не обов'язково, але добре мати)
+  useEffect(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.set(...rotation);
+    }
+  }, [rotation]);
+
   useFrame(() => {
     if (isRotating && modelRef.current) {
       modelRef.current.rotation.y += 0.01;
@@ -28,14 +41,7 @@ const Model = ({
   });
 
   return (
-    <primitive
-      ref={modelRef}
-      object={clonedScene}
-      scale={3.5}
-      position={position}
-      rotation={rotation}
-      castShadow
-    />
+    <primitive ref={modelRef} object={clonedScene} scale={3.5} castShadow />
   );
 };
 

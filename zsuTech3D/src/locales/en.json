@@ -1,0 +1,85 @@
+{
+  "tank": {
+    "title": "T-72",
+    "description": "This is a Soviet main battle tank developed in the 1960s, which became one of the most widespread tanks in the world. Here are some characteristics you can display on the page.",
+    "reset_button": "Reset",
+
+    "speed_label": "Max speed",
+    "speed_value": "60 km/h",
+
+    "range_label": "Range",
+    "range_value": "500 km",
+
+    "engine_label": "Engine",
+    "engine_value": "Diesel, 780 hp",
+
+    "height_label": "Height:",
+    "height_value": "2.226 meters",
+
+    "length_label": "Length:",
+    "length_value": "6.86 meters",
+
+    "width_label": "Width:",
+    "width_value": "3.59 meters",
+
+    "weight_label": "Weight:",
+    "weight_value": "41.5 tons"
+  },
+  "bayraktar": {
+    "title": "Bayraktar TB2",
+    "description": "This is a Turkish medium-altitude unmanned aerial vehicle (UAV) for operational-tactical use, developed by Baykar Makina.",
+    "reset_button": "Reset",
+    "price": "$5,000,000",
+
+    "weight_value": "700 kg",
+    "weight_label": "Max takeoff weight",
+
+    "weapons_value": "4 missiles",
+    "weapons_label": "Armament",
+
+    "length_value": "6.5 m",
+    "length_label": "Length",
+
+    "speed_value": "222 km/h",
+    "speed_label": "Max speed",
+
+    "flight_time_value": "27 h",
+    "flight_time_label": "Flight time",
+
+    "range_value": "150 km",
+    "range_label": "Range"
+  },
+  "himars": {
+    "title_main": "M142",
+    "title_secondary": "HIMARS",
+    "short_description": "A highly mobile rocket artillery system developed in the USA. It provides precise strikes over long distances and high maneuverability on the battlefield.",
+    "reset_button": "Reset",
+
+    "full_description_text": "A highly mobile multiple rocket launcher system equipped with missiles with a range of up to 300 km. It features rapid deployment, high precision, and agility, making it ideal for modern combat conditions.",
+
+    "weight_value": "16.25 t",
+    "weight_label": "Weight",
+
+    "speed_value": "85 km/h",
+    "speed_label": "Max speed",
+
+    "range_value": "300 km",
+    "range_label": "Firing range",
+
+    "crew_value": "3 people",
+    "crew_label": "Crew"
+  },
+  "navigation": {
+    "home": "HOME",
+    "contact": "CONTACT",
+    "news": "NEWS",
+    "tank": "Tank T-72",
+    "copyright": "© 2025 Bondar Anastasiia | Coursework",
+    "close": "Close"
+  },
+  "home": {
+  "heroTitle": "We believe in the power of technologies that protect",
+  "heroSubtitle": "Our platform tells about modern military equipment that plays a key role in defending freedom and independence. Here you’ll find information about advanced weapons that are changing the course of combat — simple, visual, and heartfelt.",
+  "sliderTitle": "Explore the equipment"
+  }
+}

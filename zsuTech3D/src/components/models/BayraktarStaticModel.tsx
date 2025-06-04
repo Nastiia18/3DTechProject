@@ -14,11 +14,11 @@ const BayraktarStaticModel = () => {
 
       if (width < 576) {
         // Мобільні
-        setPosition([-2.4, 2, -4]);
+        setPosition([-1.8, 2, -4]);
         setSize({ width: "500px", height: "350px" });
       } else if (width < 920) {
         // Планшети
-        setPosition([0, 1.5, 3]);
+        setPosition([0.1, 1.5, 3]);
         setSize({ width: "650px", height: "80vh" });
       } else {
         // Десктоп

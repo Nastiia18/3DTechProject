@@ -1,24 +1,30 @@
 import "./Style.css";
-import Tech1Model from "../../components/models/Tech1Model";
-//import { MathUtils } from "three";
+import { useRef } from "react";
+import Tech1Model, { Tech1ModelRef } from "../../components/models/Tech1Model";
 import Tech1ModelStatic from "../../components/models/Tech1ModelStatic";
+import { useTranslation } from "react-i18next";
+
 const Tech1Page = () => {
+  const { t } = useTranslation();
+  const modelRef = useRef<Tech1ModelRef>(null);
+  const handleReset = () => {
+    modelRef.current?.resetPosition();
+  };
+
   return (
     <>
       <div className="sections tech1-page">
         <div className="inner column">
           <div className="text-content">
-            <h1 className="title">Т-72</h1>
-            <p className="description">
-              Це радянський основний бойовий танк, який був розроблений у 1960-х
-              роках і став одним з найпоширеніших танків у світі. Ось кілька
-              характеристик, які можна використати на сторінці.
-            </p>
-            <button className="custom-button">Докладніше</button>
+            <h1 className="title">{t("tank.title")}</h1>
+            <p className="description">{t("tank.description")}</p>
+            <button className="custom-button" onClick={handleReset}>
+              {t("tank.reset_button")}
+            </button>
           </div>
           <div className="model-container">
             <div className="light-rays"></div>
-            <Tech1Model />
+            <Tech1Model ref={modelRef} />
           </div>
         </div>
       </div>
@@ -33,44 +39,44 @@ const Tech1Page = () => {
               <div className="feature-card">
                 <i className="fas fa-tachometer-alt"></i>
                 <div className="text-characteristic">
-                  <h3>60 км/год</h3>
-                  <p>Макс. швидкість</p>
+                  <h3>{t("tank.speed_value")}</h3>
+                  <p>{t("tank.speed_label")}</p>
                 </div>
               </div>
               <div className="feature-card">
                 <i className="fas fa-shield-alt"></i>
                 <div className="text-characteristic">
-                  <h3>500 км</h3>
-                  <p>Запас ходу</p>
+                  <h3>{t("tank.range_value")}</h3>
+                  <p>{t("tank.range_label")}</p>
                 </div>
               </div>
               <div className="feature-card">
                 <i className="fas fa-cogs"></i>
                 <div className="text-characteristic">
-                  <h3>Двигун</h3>
-                  <p>Дизельний, 780 к.с.</p>
+                  <h3>{t("tank.engine_label")}</h3>
+                  <p>{t("tank.engine_value")}</p>
                 </div>
               </div>
             </div>
             <div className="model-description-bottom">
               <div>
-                <h3>Висота:</h3>
-                <p> 2,226 метра</p>
+                <h3>{t("tank.height_label")}</h3>
+                <p>{t("tank.height_value")}</p>
               </div>
               <div className="divider"></div>
               <div>
-                <h3>Довжина:</h3>
-                <p>6,86 метра</p>
+                <h3>{t("tank.length_label")}</h3>
+                <p>{t("tank.length_value")}</p>
               </div>
               <div className="divider"></div>
               <div>
-                <h3>Ширина:</h3>
-                <p>3,59 метрам</p>
+                <h3>{t("tank.width_label")}</h3>
+                <p>{t("tank.width_value")}</p>
               </div>
               <div className="divider"></div>
               <div>
-                <h3>Маса:</h3>
-                <p>41,5 тонни</p>
+                <h3>{t("tank.weight_label")}</h3>
+                <p>{t("tank.weight_value")}</p>
               </div>
             </div>
           </div>

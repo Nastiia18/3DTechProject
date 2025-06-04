@@ -1,0 +1,309 @@
+body, html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.homepage {
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+  color: #f2e4d8;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-inner {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  margin-right: 14%;
+  width: 80%;
+}
+
+.hero-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #ffe2bf;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #c5b3a3;
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-image img {
+  max-height: 400px;
+  filter: drop-shadow(0 0 20px rgba(255, 176, 120, 0.8)) 
+          drop-shadow(0 0 40px rgba(255, 160, 100, 0.6));
+}
+.hero-image{
+    margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+/**/
+
+.slider-section {
+  width: 100vw;
+  padding: 80px 40px;
+  text-align: center;
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+  color: #ffd6c9;
+  position: relative;
+  overflow: visible;
+
+}
+
+
+.slider-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffb199;
+  text-shadow: 0 0 8px rgba(255, 85, 85, 0.4);
+}
+
+
+.card-slider {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+
+.slider-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 40px;
+  box-sizing: border-box;
+
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #ffd6c9; /* твоє світле рожеве */
+  box-shadow:
+    0 0 0 3px #ffd6c9, /* зовнішнє світіння */
+    0 0 20px #ffd6c9,
+    0 0 20px #ffd6c9;  /* глибока тінь */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+  background-color: #000;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 0 3px #fff0ea,
+    0 0 40px #ffd6c9,
+    0 0 60px #ffd6c9;
+  border-color: #ffece6;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffd6c9 !important;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8px;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 0 0 3px #ffd6c9;
+}
+
+
+
+.slider-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffe2bf;
+  text-shadow: 1px 1px 2px black;
+}
+
+.slider-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+  text-align: center;
+}
+
+.sections {
+  text-align: left;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.carousel-item {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.carousel,
+.carousel-inner,
+.carousel-item {
+  background-color: transparent !important;
+}
+
+
+
+
+@media  (max-width: 920px) {
+  .home-inner {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 10%;
+    margin-left: -25%;
+    width: 65%;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-right: 38%;
+  }
+
+  .hero-image img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .slider-section {
+    padding: 60px 30px;
+       padding-right: 4%;
+  }
+
+  .slider-title {
+    font-size: 2.4rem;
+  }
+
+  .slider-inner {
+    padding: 0px 0px;
+  }
+
+  .card {
+    width: 60vw;
+    height: 400px;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .home-inner {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 8%;
+    margin-right: 45%;
+    width: 30%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-right: 70%;
+  }
+
+  .hero-image img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .slider-section {
+ padding: 0px;
+  }
+
+  .slider-title {
+    font-size: 1.9rem;
+    padding-top: 5%;
+  }
+
+  .slider-inner {
+    padding: 0px;
+  }
+
+  .card {
+    width: 70vw;
+    height: 300px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+

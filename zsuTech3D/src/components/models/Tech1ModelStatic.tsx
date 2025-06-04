@@ -21,7 +21,7 @@ const Tech1ModelStatic = () => {
 
       if (width < 560) {
         // мобілка
-        setPosition([-2, -6, -2]);
+        setPosition([-3, -6, -2]);
         setContainerSize({ width: "600px", height: "65vh" });
       } else if (width < 920) {
         // планшет
